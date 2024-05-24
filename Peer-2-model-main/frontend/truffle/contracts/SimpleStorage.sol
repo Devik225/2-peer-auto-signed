@@ -52,10 +52,4 @@ contract SimpleStorage {
         station1 = s1;
         station2 = s2;
     }
-
-    // function executeWrite(int256 newValue, uint8 v, bytes32 r, bytes32 s) public {
-    //     require(msg.sender == station1 || msg.sender == station2, "Unauthorized");
-    //     require(ecrecover(keccak256(abi.encodePacked(address(this), newValue)), v, r, s) == station1 || ecrecover(keccak256(abi.encodePacked(address(this), newValue)), v, r, s) == station2, "Invalid signature");
-    //     write(newValue);
-    // }
 }
